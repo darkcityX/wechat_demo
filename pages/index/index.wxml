@@ -1,5 +1,2 @@
 <!--pages/index/index.wxml-->
-<view class='msg'>{{ msg }}</view>
-<view wx:for="{{arr}}" wx:if="{{ item > show }}">
-  {{index}}-----{{ item }}
-</view>
+<view>index</view>
