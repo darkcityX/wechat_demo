@@ -1,0 +1,12 @@
+/* --- 小程序公共样式表 --- */
+.msg{
+  color: #ff0000;
+  font-size: 32rpx;
+}
+.msg::before{
+  display: inline-block;
+  content: "";
+  width: 32rpx;
+  height: 32rpx;
+  background: #ff0000;
+}

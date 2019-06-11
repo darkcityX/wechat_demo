@@ -1,0 +1,27 @@
+{
+    "pages": [
+        "pages/loading/loading",
+        "pages/index/index",
+        "pages/logos/logos"
+    ],
+    "window": {
+        "navigationBarTitleText": "商城"
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/logos/logos",
+                "text": "日志"
+            }
+        ]
+    },
+    "networkTimeout": {
+        "request": 10000,
+        "downloadFile": 10000
+    },
+    "sitemapLocation": "sitemap.json"
+}

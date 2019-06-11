@@ -1,0 +1,17 @@
+<!-- loading加载页 -->
+<view class='loading'>
+    <view class="loadingContainer">
+        <view class="cube cube1"></view>
+        <view class="cube cube2"></view>
+        <view class="cube cube3"></view>
+        <view class="cube cube4"></view>
+        <view class="cube cube5"></view>
+        <view class="cube cube6"></view>
+        <view class="cube cube7"></view>
+        <view class="cube cube8"></view>
+        <view class="cube cube9"></view>
+    </view>
+    <view class='textContainer'>
+        <view class='text'>Loading...</view>
+    </view>
+</view>
