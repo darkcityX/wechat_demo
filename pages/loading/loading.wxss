@@ -6,7 +6,7 @@
     bottom: 0px;
     left: 0px;
     z-index: 10;
-    background: #66FF99;
+    background: #fff;
 
 }
 .loading .loadingContainer{

@@ -1,12 +1,20 @@
-/* --- 小程序公共样式表 --- */
-.msg{
-  color: #ff0000;
+/**
+ * 字体图标
+*/ 
+@font-face {
+  font-family: 'iconfont';  /* project id 1161678 */
+  src: url('//at.alicdn.com/t/font_1161678_n0kz8tz5qdn.eot');
+  src: url('//at.alicdn.com/t/font_1161678_n0kz8tz5qdn.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1161678_n0kz8tz5qdn.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1161678_n0kz8tz5qdn.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1161678_n0kz8tz5qdn.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1161678_n0kz8tz5qdn.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
   font-size: 32rpx;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-.msg::before{
-  display: inline-block;
-  content: "";
-  width: 32rpx;
-  height: 32rpx;
-  background: #ff0000;
-}
+.icon-right:before{content: '\e6a3';}
