@@ -1,8 +1,7 @@
 {
     "pages": [
         "pages/loading/loading",
-        "pages/index/index",
-        "pages/logos/logos"
+        "pages/index/index"
     ],
     "window": {
         "navigationBarTitleText": "商城"
@@ -14,8 +13,8 @@
                 "text": "首页"
             },
             {
-                "pagePath": "pages/logos/logos",
-                "text": "日志"
+                "pagePath": "pages/loading/loading",
+                "text": "启动页"    
             }
         ]
     },
