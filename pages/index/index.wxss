@@ -34,9 +34,15 @@
     padding: 20rpx;
     background: #fff;
 }
+/* 点击后样式修改 --- 开始 */
+.list-item-bd-show .list-item-hd .list-item-text{
+    color: #666;
+}
 .list-item-bd-show .list-item-bd{
     display: block;
 }
+/* 点击后样式修改 --- 结束 */
+
 .list-item-hd{
     display: flex;
     flex-direction: row;
