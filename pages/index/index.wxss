@@ -34,7 +34,7 @@
     padding: 20rpx;
     background: #fff;
 }
-.list-item-bd-show{
+.list-item-bd-show .list-item-bd{
     display: block;
 }
 .list-item-hd{
