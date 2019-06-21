@@ -1,18 +1,25 @@
-// pages/jiekou/index.js
+var app = getApp();
+
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        dataFieldA: 'aaaa',
-        arr: [1,2,3,4]
+
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
+        if( app.appData.userInfo == null ){
+            wx.redirectTo({
+                url: '../login/login',
+            })
+        }else{
+            console.log( app );
+        }
 
     },
 
@@ -63,5 +70,6 @@ Page({
      */
     onShareAppMessage: function () {
 
-    }
+    },
+
 })

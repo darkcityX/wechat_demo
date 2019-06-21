@@ -1,0 +1,25 @@
+<!--pages/login/login.wxml style='background:url(../../images/login-bg.png)'-->
+<view 
+    class='loginPage' 
+    style='background:url(http://www.17sucai.com/preview/266121/2017-06-30/login/images/login-bg.png)'>
+    <view class='top'>
+        <image src='./../../images/welcome.png'></image>
+    </view>
+    <form class='loginModel' bindsubmit="loginSubmit">
+        <view class="userName">
+            <label>登陆</label>
+            <input name="uname" type='text' placeholder="" />
+        </view>
+        <view class="passWorld">
+            <label>密码</label>
+            <input name="upwd" type='password' placeholder="" />
+        </view>
+        <view class="btn-area">
+            <button 
+                plain
+                hover-class='button-hover'	
+                form-type="submit">登陆</button>
+        </view>
+    </form>
+    
+</view>

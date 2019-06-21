@@ -1,12 +1,13 @@
-// pages/jiekou/index.js
+var app = getApp();
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        dataFieldA: 'aaaa',
-        arr: [1,2,3,4]
+        username: null,
+        password: null
+
     },
 
     /**
@@ -63,5 +64,20 @@ Page({
      */
     onShareAppMessage: function () {
 
+    },
+
+    /**
+     * 登陆事件
+     * 
+    */
+    loginSubmit: function(e){
+        console.log( e );
+        this.setData({
+            username: e.detail.value.uname,
+            password: e.detail.value.upwd
+        });
+
+        // 赋值给全局
+        console.log( app );
     }
 })

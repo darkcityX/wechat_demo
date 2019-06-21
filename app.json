@@ -1,9 +1,11 @@
 {
     "pages": [
+        "pages/user/user",
+        "pages/login/login",
+        "pages/loading/loading",
         "pages/index/index",
         "pages/jiekou/index",
-        "pages/yunkaifa/index",
-        "pages/loading/loading"
+        "pages/yunkaifa/index"
     ],
     "window": {
         "navigationBarTitleText": "小程序官方示例模拟"
@@ -26,7 +28,7 @@
                 "pagePath": "pages/yunkaifa/index",
                 "iconPath": "images/icon_cloud.png",
                 "selectedIconPath": "images/icon_cloud_HL.png",
-                "text": "云开发"    
+                "text": "云开发"
             }
         ]
     },
