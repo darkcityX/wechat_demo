@@ -71,7 +71,7 @@ Page({
      * 
     */
     loginSubmit: function(e){
-        console.log( e );
+        console.log( "1111" );
         this.setData({
             username: e.detail.value.uname,
             password: e.detail.value.upwd
