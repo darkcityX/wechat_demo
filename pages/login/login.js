@@ -5,8 +5,8 @@ Page({
      * 页面的初始数据
      */
     data: {
-        username: null,
-        password: null
+        uname: null,
+        upwd: null
 
     },
 
@@ -71,13 +71,70 @@ Page({
      * 
     */
     loginSubmit: function(e){
-        console.log( "1111" );
-        this.setData({
-            username: e.detail.value.uname,
-            password: e.detail.value.upwd
-        });
+        let uname = e.detail.value.uname,
+            upwd = e.detail.value.upwd;
+        if( uname == "" ){
+            wx.showToast({
+                title: '请输入账号!',
+                image: './../../images/close.png',
+                duration: 2000
+            });
+        }else if( upwd == "" ){
+            wx.showToast({
+                title: '请输入密码!',
+                image: './../../images/close.png',
+                duration: 2000
+            });
+        }else{
+            // 缺少后台验证【进行数据模拟】
+            if( this.getData() ){
+                wx.showLoading({
+                    title: '登陆成功!',
+                });
+                this.setData({
+                    uname,
+                    upwd
+                });
 
-        // 赋值给全局
-        console.log( app );
+                // 赋值给全局
+                app.appData.userInfo = {
+                    uname,
+                    upwd
+                }
+
+                // 存入缓存
+                wx.setStorage({
+                    key: "userInfo",
+                    data: {
+                        uname,
+                        upwd
+                    }
+                });
+
+                setTimeout(function () {
+                    wx.hideLoading();
+                    wx.switchTab({
+                        url: '../index/index',
+                    });
+                }, 1000);
+                
+
+            }else{
+                wx.showToast({
+                    title: '账号或密码错误!',
+                    image: './../../images/close.png',
+                    duration: 2000
+                });    
+            }
+            
+        }
+    },
+    /**
+     * 获取后台数据：
+     * 
+    */
+    getData: function(){
+        return true;
     }
+
 })

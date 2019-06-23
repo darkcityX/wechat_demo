@@ -1,11 +1,13 @@
-/* --- 整体程序的逻辑 --- */
 App({
 
     /**
      * 当小程序初始化完成时，会触发 onLaunch（全局只触发一次）
      */
     onLaunch: function () {
-        
+        // console.log( this.appData );
+        // if (this.appData.userinfo == null ){
+        //     console.log( "11111111" );
+        // }    
     },
 
     /**

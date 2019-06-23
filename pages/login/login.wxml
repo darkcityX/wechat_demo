@@ -7,7 +7,7 @@
     </view>
     <form class='loginModel' bindsubmit="loginSubmit">
         <view class="userName">
-            <label>登陆</label>
+            <label>账号</label>
             <input name="uname" type='text' placeholder="" />
         </view>
         <view class="passWorld">

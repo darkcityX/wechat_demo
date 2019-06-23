@@ -20,11 +20,11 @@ Page({
      */
     onReady: function () {
         console.log(`22222`);
-        // setTimeout(function () {
-        //     wx.switchTab({
-        //         url: '../index/index'
-        //     });
-        // }, 5000);
+        setTimeout(function () {
+            wx.switchTab({
+                url: '../index/index'
+            });
+        }, 5000);
     },
 
     /**

@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+    "navigationBarBackgroundColor": "#333333",
+    "navigationBarTitleText": "用户中心",
+    "usingComponents": {}
 }

@@ -1,1 +1,120 @@
-/* pages/user/user.wxss */
+.userPage{
+   position: relative; 
+}
+.avaterInfo{
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9; */
+    width: 100%;
+    height: 300rpx;
+    text-align: center;
+    background: #333;
+}
+.avaterContainer{
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    top: 10rpx;
+    left: 50%;
+    z-index: 11;
+    width: 100rpx;
+    height: 100rpx;
+    transform: translateX(-50%);
+    object-fit: fill;
+}
+.avaterImg{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    
+}
+.username{
+    position: absolute;
+    top: 120rpx;
+    left: 50%;
+    z-index: 11;
+    width: 100rpx;
+    height: 100rpx;
+    transform: translateX(-50%);   
+}
+.viewBottom{
+    position: absolute;
+    top: 70rpx;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    border-radius: 50% 50% 0 0;
+    background: #fff;
+}
+.floor1{
+    border-bottom: 20rpx solid #f5f5f5;
+}
+.cardViews{
+    box-sizing: border-box;
+    margin-top: 200rpx;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 10px;
+    padding: 10rpx;
+    padding-top: 20rpx;
+    padding-bottom: 20rpx;
+    width: 48%;
+    border-radius: 10rpx;
+    box-shadow: 1px 1px 1px 1px #e5e5e5;
+}
+.card:nth-child(3),.card:nth-child(4){
+    margin-bottom: 0px;
+}
+/* .card:nth-child(1),.card:nth-child(3){
+    border-radius: 10px;
+    border-right: 5px solid #fff;
+}
+.card:nth-child(2),.card:nth-child(4){
+    border-radius: 10px;
+    border-left: 5px solid #fff;
+} */
+.iconView{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    
+
+}
+.cardIcon{
+    display: inline-block;
+    width: 100rpx;
+    height: 100rpx;
+}
+.cardInfo{
+    padding-left: 110rpx;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.cardInfoNum{
+    color: #333;
+    font-size: 32rpx;
+}
+.cardInfoDesc{
+    color: #666;
+    font-size: 28rpx;
+}
+
+.moremore{
+    padding-bottom: 20rpx;
+    color: #666;
+    font-size: 28rpx;
+    text-align: center;
+    background: #ffffff;
+}
+

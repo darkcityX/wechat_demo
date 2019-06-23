@@ -1,2 +1,62 @@
 <!--pages/user/user.wxml-->
-<text>pages/user/user.wxml</text>
+<view class='userPage'>
+    <view class='avaterInfo'>
+        <!-- <image src='./../../images/touxiang.png'> -->
+        <view class='avaterContainer'>
+            <image class='avaterImg' src='./../../images/touxiang.png'></image>
+        </view>
+        <view class='username'>{{ uname }}</view>
+    </view>
+    <view class='viewBottom'>
+        <view class='floor1'>
+            <view class='cardViews'>
+                <view class='card card1'>
+                    <view class='iconView'>
+                        <image class='cardIcon' src='./../../images/userInfo_icon1.png'></image>
+                    </view>
+                    <view class='cardInfo'>
+                        <text class='cardInfoNum'>32</text>
+                        <text class='cardInfoDesc'>受邀好友总数</text>
+                    </view>
+                </view>
+                <view class='card card2'>
+                    <view class='iconView'>
+                        <image class='cardIcon' src='./../../images/userInfo_icon2.png'></image>
+                    </view>
+                    <view class='cardInfo'>
+                        <text class='cardInfoNum'>32</text>
+                        <text class='cardInfoDesc'>受邀好友总数</text>
+                    </view>
+                </view>
+                <view class='card card3'>
+                    <view class='iconView'>
+                        <image class='cardIcon' src='./../../images/userInfo_icon3.png'></image>
+                    </view>
+                    <view class='cardInfo'>
+                        <text class='cardInfoNum'>32</text>
+                        <text class='cardInfoDesc'>受邀好友总数</text>
+                    </view>
+                </view>
+                <view class='card card4'>
+                    <view class='iconView'>
+                        <image class='cardIcon' src='./../../images/userInfo_icon4.png'></image>
+                    </view>
+                    <view class='cardInfo'>
+                        <text class='cardInfoNum'>32</text>
+                        <text class='cardInfoDesc'>受邀好友总数</text>
+                    </view>
+                </view>
+            </view>   
+            <navigator class='moremore'>
+                积分兑换>
+            </navigator>   
+        </view>
+        <view class='floor2'>
+            <view class='item item1'>
+                        
+            </view>   
+        </view>
+    </view>
+       
+
+</view>

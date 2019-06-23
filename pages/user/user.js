@@ -6,21 +6,33 @@ Page({
      * 页面的初始数据
      */
     data: {
-
+        uname: '默认'
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-        if( app.appData.userInfo == null ){
-            wx.redirectTo({
-                url: '../login/login',
-            })
-        }else{
-            console.log( app );
-        }
+        let that = this;
+        // wx.getStorage({
+        //     key: 'userInfo',
+        //     success(res) {
+        //         let locatStrong = res.data;
+        //         console.log('1111---------:' + app.appData.userInfo == null);
+        //         if (app.appData.userInfo == null || locatStrong == null ) {
+        //             wx.redirectTo({
+        //                 url: '../login/login',
+        //             })
+        //         } else {
+        //             // console.log( app );
+        //             console.log("有缓存-- - --也有app");
+        //             that.setData({
+        //                 uname: app.appData.userInfo.uname
+        //             })
 
+        //         }
+        //     },
+        // });
     },
 
     /**
