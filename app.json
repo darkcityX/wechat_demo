@@ -1,11 +1,11 @@
 {
     "pages": [
+        "pages/jiekou/jiekou",
         "pages/user/user",
         "pages/loading/loading",
         "pages/login/login",
         "pages/index/index",
         "pages/zujian/zujian",
-        "pages/jiekou/index",
         "pages/yunkaifa/index"
         
     ],

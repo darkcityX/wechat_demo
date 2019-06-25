@@ -1,0 +1,21 @@
+.page-top{
+    padding: 80rpx 40rpx;
+    color: #333;
+    font-size: 0rpx;
+    text-align: center;
+}
+.page-logo{
+    margin-bottom: 20rpx;
+    width: 100rpx;
+    height: 100rpx;   
+}
+.page-desc{
+    color: #999;
+    font-size: 32rpx;
+    text-indent: 32rpx;
+}
+.weui-agree__link{
+    display: inline;
+    color: #666;
+    font-weight: bold;
+}

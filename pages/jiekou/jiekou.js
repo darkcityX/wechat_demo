@@ -5,8 +5,8 @@ Page({
      * 页面的初始数据
      */
     data: {
-        dataFieldA: 'aaaa',
-        arr: [1,2,3,4]
+        desc: '以下将展示小程序官方组件能力，组件样式仅供参考，开发者可根据自身需求自定义组件样式，具体属性参数详见',
+        logoSrc: '/images/icon_API.png'
     },
 
     /**

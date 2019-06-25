@@ -14,25 +14,25 @@ Page({
      */
     onLoad: function (options) {
         let that = this;
-        // wx.getStorage({
-        //     key: 'userInfo',
-        //     success(res) {
-        //         let locatStrong = res.data;
-        //         console.log('1111---------:' + app.appData.userInfo == null);
-        //         if (app.appData.userInfo == null || locatStrong == null ) {
-        //             wx.redirectTo({
-        //                 url: '../login/login',
-        //             })
-        //         } else {
-        //             // console.log( app );
-        //             console.log("有缓存-- - --也有app");
-        //             that.setData({
-        //                 uname: app.appData.userInfo.uname
-        //             })
+        wx.getStorage({
+            key: 'userInfo',
+            success(res) {
+                let locatStrong = res.data;
+                console.log('1111---------:' + app.appData.userInfo == null);
+                if (app.appData.userInfo == null || locatStrong == null ) {
+                    wx.redirectTo({
+                        url: '../login/login',
+                    })
+                } else {
+                    // console.log( app );
+                    console.log("有缓存-- - --也有app");
+                    that.setData({
+                        uname: app.appData.userInfo.uname
+                    })
 
-        //         }
-        //     },
-        // });
+                }
+            },
+        });
     },
 
     /**
@@ -86,7 +86,7 @@ Page({
     showViewSelect:e=>{
         console.log( e );
         wx.showActionSheet({
-            itemList: ['组件示例','接口示例','云开发'],
+            itemList: ['组件示例','接口示例','云开发示例'],
             itemColor: '#333333',
             success: res=>{
                 console.log( res );

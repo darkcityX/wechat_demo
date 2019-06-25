@@ -1,0 +1,10 @@
+<template name='pageTop'>
+    <!-- 这是顶部 -->
+    <view class='page-top'>
+        <image class='page-logo' src='{{ logoUrl }}'></image>
+        <view class='page-desc'>
+            <text>{{ desc }}</text>
+            <navigator class="weui-agree__link" url='www.baidu.com'>百度搜索</navigator>
+        </view>
+    </view>
+</template>

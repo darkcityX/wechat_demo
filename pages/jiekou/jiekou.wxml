@@ -1,0 +1,7 @@
+<import src='../../components/wxExamplePage/wxExamplePage.wxml' />
+<view class='jiekouPage'>
+    <!-- 1、页面顶部 -->
+    <template is='pageTop' data="{{ desc: desc, logoUrl: logoSrc }}"></template>
+    <!-- 2、页面底部 -->
+
+</view>

@@ -131,7 +131,6 @@
     flex-direction: row;
     flex-wrap: nowrap;  
     justify-content: space-between; 
-
     color: #333;
     font-size: 32rpx;
     border-bottom: 1px solid #e5e5e5;
