@@ -1,5 +1,5 @@
 @import "../../components/wxExamplePage/wxExamplePage.wxss";
-.jiekouPage{
+.yunkaifaPage{   
     padding: 20rpx;
     position: absolute;
     top: 0;

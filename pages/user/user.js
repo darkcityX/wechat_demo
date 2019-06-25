@@ -12,28 +12,64 @@ Page({
     /**
      * 生命周期函数--监听页面加载
      */
-    onLoad: function (options) {
-        let that = this;
+    onLoad: options=>{
+        // console.log( app.appData );
         wx.getStorage({
             key: 'userInfo',
-            success(res) {
-                let locatStrong = res.data;
-                console.log('1111---------:' + app.appData.userInfo == null);
-                if (app.appData.userInfo == null || locatStrong == null ) {
-                    wx.redirectTo({
-                        url: '../login/login',
-                    })
-                } else {
-                    // console.log( app );
-                    console.log("有缓存-- - --也有app");
-                    that.setData({
-                        uname: app.appData.userInfo.uname
-                    })
+            success: res=>{
+                console.log( "--- 进入success ---" );
+                console.log( res );
+                if( res.data ){
+                    /* 1、如果有用户信息缓存，全局 */
 
                 }
+                // if (app.appData.userInfo == null || locatStrong == null) {
+                //     wx.redirectTo({
+                //         url: '../login/login',
+                //     });
+                // } else {
+                //     // console.log( app );
+                //     console.log("有缓存-- - --也有app");
+                //     this.setData({
+                //         uname: app.appData.userInfo.uname
+                //     });
+
+                // }
+
             },
-        });
+            fail: err=>{
+                console.log("--- 进入error ----");
+                console.log( err );
+            }
+        })
     },
+    // onLoad: function (options) {
+    //     console.log("111111111111111111111111");
+    //     let that = this;
+    //     wx.getStorage({
+    //         key: 'userInfo',
+    //         success(res) {
+    //             console.log("获取缓存信息");
+    //             let locatStrong = res.data;
+    //             console.log('1111---------:' + app.appData.userInfo == null);
+    //             if (app.appData.userInfo == null || locatStrong == null ) {
+    //                 wx.redirectTo({
+    //                     url: '../login/login',
+    //                 });
+    //             } else {
+    //                 // console.log( app );
+    //                 console.log("有缓存-- - --也有app");
+    //                 that.setData({
+    //                     uname: app.appData.userInfo.uname
+    //                 });
+
+    //             }
+    //         },
+    //         fail:err=>{
+    //             console.log(err);
+    //         }
+    //     });
+    // },
 
     /**
      * 生命周期函数--监听页面初次渲染完成
@@ -101,13 +137,33 @@ Page({
                                 console.log( err );
                             }
 
-                        })
+                        });
                         break;
                     case 1:
-                        console.log('2222');
+                        wx.navigateTo({
+                            url: '../jiekou/jiekou',
+                            success: res => {
+                                console.log(res);
+                            },
+                            fail: err => {
+                                console.log(err);
+                            }
+
+                        });
+                        brea
                         break;
                     case 2:
-                        console.log('3333');
+                        wx.navigateTo({
+                            url: '../yunkaifa/yunkaifa',
+                            success: res => {
+                                console.log(res);
+                            },
+                            fail: err => {
+                                console.log(err);
+                            }
+
+                        });
+                        brea
                         break;
 
                 }

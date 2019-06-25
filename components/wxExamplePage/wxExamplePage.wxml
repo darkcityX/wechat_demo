@@ -1,4 +1,4 @@
-<template name='pageTop'>
+<template name='pageAll'>
     <!-- 这是顶部 -->
     <view class='page-top'>
         <image class='page-logo' src='{{ logoUrl }}'></image>
@@ -6,5 +6,37 @@
             <text>{{ desc }}</text>
             <navigator class="weui-agree__link" url='www.baidu.com'>百度搜索</navigator>
         </view>
+    </view>
+    <view class='index-bd'>
+        <block 
+            wx:for="{{ list }}" 
+            wx:for-item="item" 
+            wx:for-index="index"
+            wx:key="{{ index }}">
+            <view 
+                id='{{ item.id }}' 
+                data-to='{{ item.to }}'
+                data-url='{{ item.to == true ? item.url : "" }}'
+                class='list-item  {{item.open ? "list-item-bd-show" : ""}}'
+                bindtap="showToggle">
+                <view class='list-item-hd'>
+                    <view class='list-item-text'>{{ item.name }}</view>
+                    <image class='list-item-img' src='/images/{{ item.id }}.png'></image>
+                </view>
+                <view class='list-item-bd'>
+                    <view 
+                        class='list-item-evel' 
+                        wx:for="{{ item.pages }}" 
+                        wx:for-item="evel" 
+                        wx:for-index="idx"
+                        wx:key="{{ idx }}">
+                        <navigator class='list-link'>
+                            <view class='list-item-evel-text'>{{ evel }}</view>
+                            <icon class="iconfont icon-right"></icon>
+                        </navigator>
+                    </view>
+                </view>
+            </view>
+        </block>
     </view>
 </template>

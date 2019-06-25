@@ -1,0 +1,6 @@
+<import src='../../components/wxExamplePage/wxExamplePage' />
+<view class='yunkaifaPage'>
+    <template is='pageAll'
+    data='{{ desc , logoUrl , list }}'
+    bind:showToggle='showToggle'></template>
+</view>

@@ -12,19 +12,21 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-
+        wx.setStorage({
+            key: "userInfo",
+            data: null
+        });
     },
 
     /**
      * 生命周期函数--监听页面初次渲染完成
      */
     onReady: function () {
-        console.log(`22222`);
         setTimeout(function () {
             wx.switchTab({
                 url: '../index/index'
             });
-        }, 5000);
+        }, 2000);
     },
 
     /**

@@ -5,9 +5,13 @@ Page({
    * 页面的初始数据
    */
     data: {
+        logoUrl: '/images/icon_component.png',
+        desc: ' 以下将展示小程序官方组件能力，组件样式仅供参考，开发者可根据自身需求自定义组件样式，具体属性参数详见',
         list: [
             {
                 id: 'view',
+                to: false,
+                url: 'javascript:void(0);',
                 name: '视图容器',
                 open: false,
                 pages: [
@@ -20,6 +24,8 @@ Page({
             }, 
             {
                 id: 'content',
+                to: false,
+                url: 'javascript:void(0);',
                 name: '基础内容',
                 open: false,
                 pages: [
@@ -31,6 +37,8 @@ Page({
             }, 
             {
                 id: 'form',
+                to: false,
+                url: 'javascript:void(0);',
                 name: '表单组件',
                 open: false,
                 pages: [
@@ -49,12 +57,16 @@ Page({
             }, 
             {
                 id: 'nav',
+                to: false,
+                url: 'javascript:void(0);',
                 name: '导航',
                 open: false,
                 pages: ['navigator']
             }, 
             {
                 id: 'media',
+                to: false,
+                url: 'javascript:void(0);',
                 name: '媒体组件',
                 open: false,
                 pages: [
@@ -66,18 +78,24 @@ Page({
             }, 
             {
                 id: 'map',
+                to: false,
+                url: 'javascript:void(0);',
                 name: '地图',
                 open: false,
                 pages: ['map']
             }, 
             {
                 id: 'canvas',
+                to: false,
+                url: 'javascript:void(0);',
                 name: '画布',
                 open: false,
                 pages: ['canvas']
             }, 
             {
                 id: 'open',
+                to: false,
+                url: 'javascript:void(0);',
                 name: '开放能力',
                 open: false,
                 pages: [
@@ -144,22 +162,27 @@ Page({
     onShareAppMessage: function () {
     
     },
-    showToggle(e){
-        // console.log(e);
+    showToggle(e) {
         let id = e.currentTarget.id;
         let list = this.data.list;
-        list.forEach((val,i)=>{
-            // console.log( val );
-            if( id == val.id ){
-                console.log(`1111111`);
-                val.open = !val.open;
-            }else{
-                val.open = false;    
-            }
-        });
-        this.setData({
-            list
-        });
+        if (e.currentTarget.dataset.to) {
+            // 路由跳转
+
+            // wx.navigateTo({
+            //     url: e.currentTarget.dataset.url,
+            // });
+        } else {
+            list.forEach((val, i) => {
+                if (id == val.id) {
+                    val.open = !val.open;
+                } else {
+                    val.open = false;
+                }
+            });
+            this.setData({
+                list
+            });
+        }
 
         wx.reportAnalytics('click_view_programmatically', {})
     }

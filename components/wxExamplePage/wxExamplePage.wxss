@@ -19,3 +19,58 @@
     color: #666;
     font-weight: bold;
 }
+
+.list-item{
+    margin-bottom: 20rpx;
+    padding: 20rpx;
+    background: #fff;
+}
+/* 点击后样式修改 --- 开始 */
+.list-item-bd-show .list-item-hd .list-item-text{
+    color: #666;
+}
+.list-item-bd-show .list-item-bd{
+    display: block;
+}
+/* 点击后样式修改 --- 结束 */
+
+.list-item-hd{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items:center;
+    justify-content: space-between;    
+}
+.list-item-text{
+    color: #333;
+    font-size: 36rpx;
+    align-items: center;
+
+}
+.list-item-img{
+    width: 64rpx;
+    height: 64rpx;
+}
+.list-item-bd{
+    display: none;
+    margin-top: 20rpx;
+
+}
+.list-item-evel{
+    padding: 10rpx 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+.list-link{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.list-item-evel-text{
+    color: #333;
+    font-size: 36rpx;
+}
+.icon-right{
+    color: #999;
+    font-size: 36rpx;
+}
