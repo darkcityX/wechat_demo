@@ -118,3 +118,22 @@
     background: #ffffff;
 }
 
+.floor2{
+    padding: 4px 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+.floor2 .item{
+    padding: 6px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;  
+    justify-content: space-between; 
+
+    color: #333;
+    font-size: 32rpx;
+    border-bottom: 1px solid #e5e5e5;
+}
+

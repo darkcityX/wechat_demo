@@ -4,8 +4,10 @@
         "pages/loading/loading",
         "pages/login/login",
         "pages/index/index",
+        "pages/zujian/zujian",
         "pages/jiekou/index",
         "pages/yunkaifa/index"
+        
     ],
     "window": {
         "navigationBarTitleText": "小程序官方示例模拟"
@@ -23,7 +25,7 @@
                 "pagePath": "pages/user/user",
                 "iconPath": "images/user.png",
                 "selectedIconPath": "images/user_selected.png",
-                "text": "用户中心"               
+                "text": "用户中心"
             }
         ]
     },

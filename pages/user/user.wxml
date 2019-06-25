@@ -52,8 +52,9 @@
             </navigator>   
         </view>
         <view class='floor2'>
-            <view class='item item1'>
-                        
+            <view class='item item1' bindtap='showViewSelect'>
+                <view class='list-item-evel-text'>微信小程序官方示例</view>
+                <icon class="iconfont icon-right"></icon>           
             </view>   
         </view>
     </view>

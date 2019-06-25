@@ -83,5 +83,38 @@ Page({
     onShareAppMessage: function () {
 
     },
+    showViewSelect:e=>{
+        console.log( e );
+        wx.showActionSheet({
+            itemList: ['组件示例','接口示例','云开发'],
+            itemColor: '#333333',
+            success: res=>{
+                console.log( res );
+                switch(res.tapIndex){
+                    case 0:
+                        wx.navigateTo({
+                            url: '../zujian/zujian',
+                            success:res=>{
+                                console.log( res );
+                            },
+                            fail:err=>{
+                                console.log( err );
+                            }
+
+                        })
+                        break;
+                    case 1:
+                        console.log('2222');
+                        break;
+                    case 2:
+                        console.log('3333');
+                        break;
+
+                }
+
+            }
+
+        })
+    }
 
 })
