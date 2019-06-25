@@ -2,16 +2,14 @@
     "pages": [
         "pages/loading/loading",
         "pages/user/user",
-        
         "pages/login/login",
         "pages/index/index",
-        
         "pages/zujian/zujian",
         "pages/yunkaifa/yunkaifa",
         "pages/jiekou/jiekou"  
     ],
     "window": {
-        "navigationBarTitleText": "小程序官方示例模拟"
+        "navigationBarTitleText": "darkcity_x练习"
     },
     "tabBar": {
         "selectedColor": "#FF3300",
